@@ -32,37 +32,38 @@ This system acts as an intelligent mentor inside a corporate-style training plat
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone Repository
-
+### Clone Repository
+```
 git clone https://github.com/YOUR_USERNAME/ai-learning-mentor.git
+
 cd ai-learning-mentor
+```
 
-
-### 2️⃣ Create Virtual Environment
-
+### Create Virtual Environment
+```
 python -m venv venv
+```
+### Activate virtual environment
+```
 venv\Scripts\activate
-
-
-### 3️⃣ Install Dependencies
-
+```
+### Upgarde pip
+```
+python -m pip install --upgrade pip
+```
+### Install requirements
+```
 pip install -r requirements.txt
-
-
-### 4️⃣ Create .env File
-
-Create a `.env` file in the root directory and add:
-
-GROQ_API_KEY=your_api_key_here
-
-
-### 5️⃣ Run the Server
-
+```
+### Start FAstAPI
+```
 uvicorn app.main:app --reload
-
-
-Open:
+```
+### Navigate to this page and check
+```
 http://127.0.0.1:8000/docs
+```
+---
 
 
 ---
@@ -90,12 +91,6 @@ Response format:
 }
 ```
 
-📌 Author
-Om Shankar Thakur
-AI/ML Developer
-
-
----
 
 # 🚀 After Creating README
 
@@ -111,31 +106,15 @@ git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/ai-learning-mentor.git
 git push -u origin main
 
-## Follow these steps-
-1. Create Virtual Environment
-```
-python -m venv venv
-```
-2. Activate virtual environment
-```
-venv\Scripts\activate
-```
-3. Upgarde pip
-```
-python -m pip install --upgrade pip
-```
-4. Install requirements
-```
-pip install -r requirements.txt
-```
-5. Start FAstAPI
-```
-uvicorn app.main:app --reload
-```
-6. Navigate to this page and check
-```
-http://127.0.0.1:8000/docs
-```
 ---
+
+
+📌 Author
+Om Shankar Thakur
+AI/ML Developer
+
+
+---
+
 
 
