@@ -29,23 +29,6 @@ This system acts as an intelligent mentor inside a corporate-style training plat
 
 ---
 
-## 📂 Project Structure
-
-chatbot/
-│
-├── app/
-│ ├── main.py
-│ ├── llm_service.py
-│ ├── prompt_template.py
-│ ├── models.py
-│ ├── validators.py
-│
-├── requirements.txt
-├── .gitignore
-├── README.md
-
-
----
 
 ## ⚙️ Setup Instructions
 
@@ -96,26 +79,16 @@ Request body:
   "message": "Explain transformers",
   "learner_name": "Om"
 }
+```
 Response format:
-
+```
 {
   "answer": "...",
   "confidence": "high",
   "related_topics": [],
   "suggested_next_action": ""
 }
-🧠 Future Enhancements
-XP & Mastery tracking
-
-RAG-based learning recommendations
-
-Mock interview mode (voice/video)
-
-Dashboard analytics integration
-
-Docker deployment
-
-Frontend integration
+```
 
 📌 Author
 Om Shankar Thakur
@@ -138,14 +111,31 @@ git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/ai-learning-mentor.git
 git push -u origin main
 
-
+## Follow these steps-
+1. Create Virtual Environment
+```
+python -m venv venv
+```
+2. Activate virtual environment
+```
+venv\Scripts\activate
+```
+3. Upgarde pip
+```
+python -m pip install --upgrade pip
+```
+4. Install requirements
+```
+pip install -r requirements.txt
+```
+5. Start FAstAPI
+```
+uvicorn app.main:app --reload
+```
+6. Navigate to this page and check
+```
+http://127.0.0.1:8000/docs
+```
 ---
 
-If you want, I can now help you:
 
-- Make this deployable on Render
-- Add Docker
-- Add badge + professional GitHub polish
-- Or upgrade it into full RAG LMS architecture
-
-You’re building something strong here 💪
