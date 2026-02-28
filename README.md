@@ -95,17 +95,17 @@ Response format:
 # 🚀 After Creating README
 
 Run:
-
+```
 git add README.md
 git commit -m "docs: add project README with setup instructions"
-
+```
 
 Then push:
-
+```
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/ai-learning-mentor.git
 git push -u origin main
-
+```
 ---
 
 
